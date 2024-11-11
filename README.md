@@ -117,7 +117,7 @@ Follow these steps to get MAGIC CUT running on your local machine:
 
 4. **Environment Variables**
 
-    Create .env files in the frontend, admin, and backend directories with the following variable names:
+    Create .env files in the root of client and server directories with the following variable names:
     - **CLIENT**
       
       In the client directory, create a .env file with:
