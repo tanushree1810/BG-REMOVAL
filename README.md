@@ -93,6 +93,70 @@ Watch the demo of MAGIC CUT in action:
 *Click the image to watch the full demo on YouTube.*
 
 
+## Run Locally 💻
+
+Follow these steps to get MAGIC CUT running on your local machine:
+
+2. **Install Frontend Dependencies**
+   
+   Navigate to the frontend directory and install the necessary dependencies:
+   ```bash
+   cd client
+   npm install
+   npm install react react-dom react-router-dom @clerk/clerk-react axios tailwindcss
+
+
+3. **Install Backend Dependencies**
+
+    Next, navigate to the backend directory and install the dependencies there:
+    ```bash
+    cd ../server
+    npm install
+    npm install express mongoose jsonwebtoken multer razorpay cors dotenv svix
+
+
+4. **Environment Variables**
+
+    Create .env files in the frontend, admin, and backend directories with the following variable names:
+    - **CLIENT**
+      
+      In the client directory, create a .env file with:
+      ```bash
+      VITE_CLERK_PUBLISHABLE_KEY=''
+      VITE_BACKEND_URL=''
+      VITE_RAZORPAY_KEY_ID=''
+
+    - **SERVER**
+      
+      In the backend directory, create a .env file with:
+      ```bash
+      MONGODB_URI=''
+      CLERK_WEBHOOK_SECRET=''
+      CLIPDROP_API=''
+      RAZORPAY_KEY_ID=''
+      RAZORPAY_SECRET_KEY=''
+      CURRENCY='INR'
+    Populate these variables with your own values.
+
+5. **Start the Backend Server**
+
+      In the backend directory, start the backend server with:
+      ```bash
+      npm run server.js
+
+6. **Start the Frontend**
+   
+      In a new terminal window, navigate to the frontend directory and start the frontend application with:
+      ```bash
+      npm run dev
+
+## 📞 **Contact Me:**
+
+- **LinkedIn**: [Tanushree Kaushik](https://www.linkedin.com/in/tanushree-kaushik-855601221/) 🌐
+- **GitHub**: [tanushree1810](https://github.com/tanushree1810) 💻
+
+Feel free to tweak any details!
+
 
 
 
